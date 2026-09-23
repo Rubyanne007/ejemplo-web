@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/estilo.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>MI PRIMERA PAGINA WEB EN LENGUAJE DE MARCAS</h1>
+            <h2>Menu:</h2>
+        <a class="referencia" href="index.html">Índice</a>
+		<a class="referencia" href="Horario.html">Horario</a>
+		<a class="referencia" href="formulario.html">Formulario</a>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <legend><h2>Formulario de contacto</h2></legend>
+                        <p>    
+                            <label for="nombre">Nombre*:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        
+                        <p>
+                            <label for="apellido">Apellido*:</label>
+                            <input type="text" id="apellido" name="apellido" required>
+                        </p>
+                        <p>
+                            <label for="email">email*:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Fechas y horas</h2></legend>
+                       <p>
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                       </p>
+                       <p>
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" name="hora" required>
+                       </p>
+                       <p>
+                            <label for="fechaHora">Fecha y hora:</label>
+                            <input type="datetime-local" id="fechaHora" name="fechaHora" required>
+                       </p>
+                       <p>
+                            <label for="mes">Mes:</label>
+                            <input type="month" id="mes" name="mes" required>
+                       </p>
+                        <p>
+                            <label for="semana">Semana:</label>
+                            <input type="week" id="semana" name="semana" required>
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Valores numéricos</h2></legend>
+                    <p>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="0" max="120" required>
+                    </p>
+                    <p>
+                        <label for="Nivel">Nivel:</label>
+                        <input type="range" id="rango" name="rango" min="0" max="100" required>
+                    </p>
+                    <p>
+                        <label for="color">Color:</label>
+                        <input type="color" id="color" name="color" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Opciones</h2></legend>
+                    <p>Selecciona una opción:</p>
+                    <p>
+                        <input type="radio" id="Ketchup" name="condimento" value="Ketchup">
+                        <label for="Ketchup">Ketchup</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="Mostaza" name="condimento" value="Mostaza">
+                        <label for="Mostaza">Mostaza</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="Mayonesa" name="condimento" value="Mayonesa">
+                        <label for="Mayonesa">Mayonesa</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="Deporte" name="aficiones" value="Deporte">
+                        <label for="Deporte">Deporte</label>
+                        <br>
+                        <input type="checkbox" id="Musica" name="aficiones" value="Musica">
+                        <label for="Musica">Música</label>
+                        <br>
+                        <input type="checkbox" id="Lectura" name="aficiones" value="Lectura">
+                        <label for="Lectura">Lectura</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Listas</h2></legend>
+                    <p>
+                        <label for="lista">Selecciona un elemento de la lista:</label>
+                        <select id="lista" name="lista" required>
+                            <option value="">--Selecciona una opción--</option>
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                    </p>
+                    <label for="listacongrupos">Selecciona un elemento de la lista con grupos:</label>
+                    <p>
+                        <select id="listacongrupos" name="listacongrupos" required>
+                            <option value="">--Selecciona una opción--</option>
+                            <optgroup label="Grupo 1">
+                                <option value="opcion1">Opción 1</option>
+                                <option value="opcion2">Opción 2</option>
+                            </optgroup>
+                            <optgroup label="Grupo 2">
+                                <option value="opcion3">Opción 3</option>
+                                <option value="opcion4">Opción 4</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="listaMultiple">Selecciona varios elementos de la lista:</label>
+                        <select id="listaMultiple" name="listaMultiple" multiple required>
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                            <option value="opcion4">Opción 4</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Área de texto</h2></legend>
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Otros elementos</h2></legend>
+                    <p>
+                        <label for="archivo">Selecciona un archivo:</label>
+                        <input type="file" id="archivo" name="archivo" required>
+                    </p>
+                    <p>
+                        <label for="navegador">Navegador:</label>
+                        <input type="url" id="navegador" name="navegador" required>
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </p>
+            </form>
+        </main>
+        <footer>
+            <p>CIFP VIRGEN DE GRACIA</p>
+        </footer>
+    </body>
+</html>
